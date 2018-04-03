@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/4 | jachy的博客</title>
+  <title>curl的前世今身 | jachy的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="知一行一,必获大益">
-<meta property="og:type" content="website">
-<meta property="og:title" content="jachy的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/04/index.html">
+  <meta name="description" content="What is curl？command line tool and library for transferring data with URLscurl是一个利用URL语法在命令行下工作的文件综合传输工具，支持文件下载和上传 Supports…cURL支持的通信协议有FTP、FTPS、HTTP、HTTPS、TFTP、SFTP、Gopher、SCP、Telnet、DICT、FILE、LDAP、L">
+<meta property="og:type" content="article">
+<meta property="og:title" content="curl的前世今身">
+<meta property="og:url" content="http://yoursite.com/2018/04/03/curl的前世今身/index.html">
 <meta property="og:site_name" content="jachy的博客">
-<meta property="og:description" content="知一行一,必获大益">
+<meta property="og:description" content="What is curl？command line tool and library for transferring data with URLscurl是一个利用URL语法在命令行下工作的文件综合传输工具，支持文件下载和上传 Supports…cURL支持的通信协议有FTP、FTPS、HTTP、HTTPS、TFTP、SFTP、Gopher、SCP、Telnet、DICT、FILE、LDAP、L">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-03T14:10:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jachy的博客">
-<meta name="twitter:description" content="知一行一,必获大益">
+<meta name="twitter:title" content="curl的前世今身">
+<meta name="twitter:description" content="What is curl？command line tool and library for transferring data with URLscurl是一个利用URL语法在命令行下工作的文件综合传输工具，支持文件下载和上传 Supports…cURL支持的通信协议有FTP、FTPS、HTTP、HTTPS、TFTP、SFTP、Gopher、SCP、Telnet、DICT、FILE、LDAP、L">
   
     <link rel="alternative" href="/atom.xml" title="jachy的博客" type="application/atom+xml">
   
@@ -157,103 +158,180 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-curl的前世今身" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      curl的前世今身
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/03/curl的前世今身/" class="archive-article-date">
+
+        
+        <a href="/2018/04/03/curl的前世今身/" class="archive-article-date">
   	<time datetime="2018-04-03T14:07:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/03/curl的前世今身/">curl的前世今身</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="What-is-curl？"><a href="#What-is-curl？" class="headerlink" title="What is curl？"></a>What is curl？</h4><p>command line tool and library for transferring data with URLs<br>curl是一个利用URL语法在命令行下工作的文件综合传输工具，支持文件下载和上传</p>
+<h4 id="Supports…"><a href="#Supports…" class="headerlink" title="Supports…"></a>Supports…</h4><p>cURL支持的通信协议有FTP、FTPS、HTTP、HTTPS、TFTP、SFTP、Gopher、SCP、Telnet、DICT、FILE、LDAP、LDAPS、IMAP、POP3、SMTP和RTSP</p>
+<h4 id="Who-makes-curl"><a href="#Who-makes-curl" class="headerlink" title="Who makes curl?"></a>Who makes curl?</h4><p>来自瑞典（斯德哥尔摩）的Daniel Stenberg 于1996年末<br>基于开源工具HttpGet二次开发的</p>
+<h4 id="What’s-the-latest-curl"><a href="#What’s-the-latest-curl" class="headerlink" title="What’s the latest curl?"></a>What’s the latest curl?</h4><p>最新版本：7.54.1, 发行于2017年6月14日<br>我们目前线上的版本：7.54.0</p>
+<h4 id="SYNOPSIS"><a href="#SYNOPSIS" class="headerlink" title="SYNOPSIS"></a>SYNOPSIS</h4><p>curl [options] [URL…]</p>
+<p>####Options<br>-o &lt; file_name &gt; 保存为file_name的文件<br>-e ‘referer_name’ 指定referer<br>-x, –proxy [protocol://]host[:port] 指定某主机的某个端口，一般用于http<br>–resolve &lt; host:port:address &gt; 指定某主机的某个端口，一般用于https<br>–connect-timeout &lt; seconds &gt; 指定超时时间<br>-Y, –speed-limit &lt; speed &gt; 下载真实速度低于这个value，就断开<br>-y, –speed-time &lt; seconds &gt; 下载真实时间低于这个value，就断开<br>-H, –header &lt; header &gt; 指定访问的头部<br>-A, –user-agent &lt; name &gt; 指定UA<br>-v, –verbose<br>-V, –version<br>–limit-rate &lt; speed &gt; 指定下载速度<br>-m, –max-time &lt; time &gt; 指定下载超时时间<br>-L, –location 拉取跳转后的内容<br>-w, –write-out &lt; format &gt; 以什么格式输出<br>-r, –range 分段下载，也叫请求range<br>-u 用户名:密码<br>-T &lt; file_name &gt;上传文件</p>
+<p>####Common usage<br>1.测试referer访问</p>
+<p>curl “URL” -vo /dev/null -x 127.1:80 -e “referer值”</p>
+<p>2.测试https访问</p>
+<p>curl “URL” -vo /dev/null –resolve 域名:端口:主机</p>
+<p>3.测试限制下载速度访问</p>
+<p>curl “URL” -vo /dev/null –limit-rate num[K/M/G]<br>默认是bytes/second</p>
+<p>4.获取302后的内容</p>
+<p>curl “URL” -vo /dev/null -x 127.1:80 -L</p>
+<p>5.显示下载大小，下载速度等</p>
+<p>curl ‘URL’ -O -w “%{size_download}\t%{speed_download}\t%{time_total}\n” -v</p>
+<p> curl ‘URL’  -x 127.1:80 -H “x-header-trace:all” -H “x-trace-id:baishan”  -w “time_namelookup:%{time_namelookup}  time_connect:%{time_connect}  time_total:%{time_total}   speed_download:%{speed_download}\n”</p>
+<p>6.下载速度为2k，超时时间为2s</p>
+<p>curl ‘URL’ -vo /dev/null -x 127.1:80 –limit-rate 2k -m 5</p>
+<p>7.模拟range请求或者分段下载</p>
+<p>curl ‘URL’ -o img.part1 -r 0-50</p>
+<p>7.指定UA</p>
+<p>curl “URL” -vo /dev/null -x 127.1:80 -A hades<br>curl “URL” -vo /dev/null -x 127.1:80 -H ‘User-Agent:hades’<br>curl “URL” -vo /dev/null -x 127.1:80 -H ‘Client-Ip:1.1.1.1’<br>curl “URL” -vo /dev/null -x 127.1:80 -H ‘Referer:<a href="http://www.baidu.com’" target="_blank" rel="noopener">www.baidu.com’</a><br>curl “URL” -vo /dev/null -x 127.1:80 -H ‘Range: bytes=0-100’<br>curl “URL” -vo /dev/null -x 127.1:80 -H ‘Host:1.1.1.1’</p>
+<h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><p>1.<a href="https://curl.haxx.se/" target="_blank" rel="noopener">https://curl.haxx.se/</a><br>2.<a href="http://linux.51yip.com/search/curl" target="_blank" rel="noopener">http://linux.51yip.com/search/curl</a><br>3.<a href="http://zoukejian.blog.51cto.com/131276/80496" target="_blank" rel="noopener">http://zoukejian.blog.51cto.com/131276/80496</a></p>
+<p>####Maintainer<br>Jachy Tan<br><a href="mailto:jietan512@gmail.com" target="_blank" rel="noopener">jietan512@gmail.com</a></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/03/curl的前世今身/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/03/tanjie-home/" class="archive-article-date">
-  	<time datetime="2018-04-03T12:06:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/03/tanjie-home/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">tanjie home</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/03/tanjie-home/">tanjie home</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/03/hello-world/" class="archive-article-date">
-  	<time datetime="2018-04-03T07:26:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/03/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -276,8 +354,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
