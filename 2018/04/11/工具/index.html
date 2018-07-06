@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="工欲善其事，必先利其器。数据可视化工具说到数据呈现，必然少不了可视化，分分钟将你的数据以更直观更闪亮的形式展现在用户面前Tableau：http://www.tableau.com/zh-cnInfogr.am：https://infogr.am/Easel.ly：https://www.easel.ly/Color Brewer：http://colorbrewer2.org/iCharts：h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工具">
+<meta property="og:url" content="http://yoursite.com/2018/04/11/工具/index.html">
+<meta property="og:site_name" content="jachy的博客">
+<meta property="og:description" content="工欲善其事，必先利其器。数据可视化工具说到数据呈现，必然少不了可视化，分分钟将你的数据以更直观更闪亮的形式展现在用户面前Tableau：http://www.tableau.com/zh-cnInfogr.am：https://infogr.am/Easel.ly：https://www.easel.ly/Color Brewer：http://colorbrewer2.org/iCharts：h">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-06T15:09:09.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="工具">
+<meta name="twitter:description" content="工欲善其事，必先利其器。数据可视化工具说到数据呈现，必然少不了可视化，分分钟将你的数据以更直观更闪亮的形式展现在用户面前Tableau：http://www.tableau.com/zh-cnInfogr.am：https://infogr.am/Easel.ly：https://www.easel.ly/Color Brewer：http://colorbrewer2.org/iCharts：h">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/04/11/工具/"/>
+
+
+
+
+
+  <title>工具 | jachy的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">jachy的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">知行合一</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/11/工具/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jachy Tan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/tanjie.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jachy的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">工具</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-11T09:10:53+08:00">
+                2018-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="工欲善其事，必先利其器。"><a href="#工欲善其事，必先利其器。" class="headerlink" title="工欲善其事，必先利其器。"></a>工欲善其事，必先利其器。</h2><h3 id="数据可视化工具"><a href="#数据可视化工具" class="headerlink" title="数据可视化工具"></a>数据可视化工具</h3><p><code>说到数据呈现，必然少不了可视化，分分钟将你的数据以更直观更闪亮的形式展现在用户面前</code><br>Tableau：<a href="http://www.tableau.com/zh-cn" target="_blank" rel="noopener">http://www.tableau.com/zh-cn</a><br>Infogr.am：<a href="https://infogr.am/" target="_blank" rel="noopener">https://infogr.am/</a><br>Easel.ly：<a href="https://www.easel.ly/" target="_blank" rel="noopener">https://www.easel.ly/</a><br>Color Brewer：<a href="http://colorbrewer2.org/" target="_blank" rel="noopener">http://colorbrewer2.org/</a><br>iCharts：<a href="http://www.icharts.in/" target="_blank" rel="noopener">http://www.icharts.in/</a><br>ChartBlocks：<a href="http://www.chartblocks.com/en/" target="_blank" rel="noopener">http://www.chartblocks.com/en/</a><br>Visual.ly：<a href="http://visual.ly/" target="_blank" rel="noopener">http://visual.ly/</a><br>Nuvi：<a href="http://www.nuvi.com/" target="_blank" rel="noopener">http://www.nuvi.com/</a><br>Dygraphs：<a href="http://dygraphs.com/" target="_blank" rel="noopener">http://dygraphs.com/</a><br>百度ECharts：<a href="http://echarts.baidu.com/" target="_blank" rel="noopener">http://echarts.baidu.com/</a><br>Cytoscape：<a href="http://www.cytoscape.org/" target="_blank" rel="noopener">http://www.cytoscape.org/</a><br>图表秀：<a href="http://www.tubiaoxiu.com/" target="_blank" rel="noopener">http://www.tubiaoxiu.com/</a><br>数据观：<a href="http://shujuguan.cn/" target="_blank" rel="noopener">http://shujuguan.cn/</a><br>微博足迹可视化：<a href="http://vis.pku.edu.cn/weibova/weibogeo_footprint/index.html" target="_blank" rel="noopener">http://vis.pku.edu.cn/weibova/weibogeo_footprint/index.html</a><br>BDP个人版：<a href="https://me.bdp.cn/home.html" target="_blank" rel="noopener">https://me.bdp.cn/home.html</a><br>xdatainsight：<a href="http://www.xdatainsight.com/portal/html/home.html" target="_blank" rel="noopener">http://www.xdatainsight.com/portal/html/home.html</a><br>当然，excel你是绝对不能忽略的！</p>
+<h3 id="词云可视化工具"><a href="#词云可视化工具" class="headerlink" title="词云可视化工具"></a>词云可视化工具</h3><p>Tagul：<a href="https://tagul.com/" target="_blank" rel="noopener">https://tagul.com/</a><br>Tagxedo：<a href="http://www.tagxedo.com/" target="_blank" rel="noopener">http://www.tagxedo.com/</a><br>Wordle：<a href="http://www.wordle.net/" target="_blank" rel="noopener">http://www.wordle.net/</a><br>WordItOut：<a href="http://worditout.com/" target="_blank" rel="noopener">http://worditout.com/</a><br>ToCloud：<a href="http://www.tocloud.com/" target="_blank" rel="noopener">http://www.tocloud.com/</a><br>Rost：<a href="http://www.cncrk.com/downinfo/54638.html" target="_blank" rel="noopener">http://www.cncrk.com/downinfo/54638.html</a><br>图悦：<a href="http://www.picdata.cn/（国产软件）" target="_blank" rel="noopener">http://www.picdata.cn/（国产软件）</a><br>语义分析系统：<a href="http://ictclas.nlpir.org/nlpir/" target="_blank" rel="noopener">http://ictclas.nlpir.org/nlpir/</a><br>腾讯文智：<a href="http://nlp.qq.com/semantic.cgi" target="_blank" rel="noopener">http://nlp.qq.com/semantic.cgi</a></p>
+<h3 id="互联网趋势分析工具"><a href="#互联网趋势分析工具" class="headerlink" title="互联网趋势分析工具"></a>互联网趋势分析工具</h3><p>百度指数：<a href="http://index.baidu.com/" target="_blank" rel="noopener">http://index.baidu.com/</a><br>好搜指数：<a href="http://index.so.com/#index" target="_blank" rel="noopener">http://index.so.com/#index</a><br>阿里指数：<a href="https://alizs.taobao.com/" target="_blank" rel="noopener">https://alizs.taobao.com/</a><br>艾瑞咨询：<a href="http://www.iresearch.com.cn/" target="_blank" rel="noopener">http://www.iresearch.com.cn/</a><br>友盟指数：<a href="http://www.umeng.com/" target="_blank" rel="noopener">http://www.umeng.com/</a><br>百度预测：<a href="http://trends.baidu.com/" target="_blank" rel="noopener">http://trends.baidu.com/</a><br>微博指数：<a href="http://data.weibo.com/index" target="_blank" rel="noopener">http://data.weibo.com/index</a><br>新浪微舆情：<a href="http://wyq.sina.com/login.shtml" target="_blank" rel="noopener">http://wyq.sina.com/login.shtml</a></p>
+<h3 id="在线调查工具"><a href="#在线调查工具" class="headerlink" title="在线调查工具"></a>在线调查工具</h3><p>腾讯问卷调查：<a href="http://wj.qq.com/" target="_blank" rel="noopener">http://wj.qq.com/</a><br>麦客：<a href="http://www.mikecrm.com/" target="_blank" rel="noopener">http://www.mikecrm.com/</a><br>ICTR：<a href="http://cn2.ictr.cn/" target="_blank" rel="noopener">http://cn2.ictr.cn/</a><br>问道网：<a href="http://www.askform.cn/" target="_blank" rel="noopener">http://www.askform.cn/</a><br>问卷星：<a href="http://www.sojump.com/" target="_blank" rel="noopener">http://www.sojump.com/</a><br>调查派：<a href="http://www.diaochapai.com/" target="_blank" rel="noopener">http://www.diaochapai.com/</a><br>问卷网：<a href="http://www.wenjuan.com/" target="_blank" rel="noopener">http://www.wenjuan.com/</a><br>SurveyMonkey：<a href="https://zh.surveymonkey.com/" target="_blank" rel="noopener">https://zh.surveymonkey.com/</a></p>
+<h3 id="网站分析监测工具"><a href="#网站分析监测工具" class="headerlink" title="网站分析监测工具"></a>网站分析监测工具</h3><p>百度统计：<a href="http://tongji.baidu.com/web/welcome/login" target="_blank" rel="noopener">http://tongji.baidu.com/web/welcome/login</a><br>站长工具：<a href="http://tool.chinaz.com/" target="_blank" rel="noopener">http://tool.chinaz.com/</a><br>CNZZ：<a href="http://www.cnzz.com/o_index.php?spm=0.0.0.0.kxHVXo" target="_blank" rel="noopener">http://www.cnzz.com/o_index.php?spm=0.0.0.0.kxHVXo</a><br>Alexa：<a href="http://www.alexa.com/" target="_blank" rel="noopener">http://www.alexa.com/</a><br>腾讯云分析：<a href="http://mta.qq.com/" target="_blank" rel="noopener">http://mta.qq.com/</a><br>51.la：<a href="http://www.51.la/" target="_blank" rel="noopener">http://www.51.la/</a></p>
+<h3 id="网络数据采集工具"><a href="#网络数据采集工具" class="headerlink" title="网络数据采集工具"></a>网络数据采集工具</h3><p>八爪鱼：<a href="http://www.bazhuayu.com/" target="_blank" rel="noopener">http://www.bazhuayu.com/</a><br>集搜客：<a href="http://www.gooseeker.com/" target="_blank" rel="noopener">http://www.gooseeker.com/</a><br>火车采集器：<a href="http://www.locoy.com/" target="_blank" rel="noopener">http://www.locoy.com/</a></p>
+<h3 id="其他数据网"><a href="#其他数据网" class="headerlink" title="其他数据网"></a>其他数据网</h3><p>媒体微博排行榜：<a href="http://v6.bang.weibo.com/xmt" target="_blank" rel="noopener">http://v6.bang.weibo.com/xmt</a><br>新媒体排行榜：<a href="http://www.newrank.cn/" target="_blank" rel="noopener">http://www.newrank.cn/</a><br>友盟：<a href="http://www.umeng.com/" target="_blank" rel="noopener">http://www.umeng.com/</a><br>中国新闻地图：<a href="http://vis.360.cn/open/cnnews/" target="_blank" rel="noopener">http://vis.360.cn/open/cnnews/</a><br>中国票房榜：<a href="http://www.cbooo.cn/" target="_blank" rel="noopener">http://www.cbooo.cn/</a><br>收视率排行：<a href="http://www.tvtv.hk/archives/category/tv" target="_blank" rel="noopener">http://www.tvtv.hk/archives/category/tv</a><br>农业大数据云平台：<a href="http://www.dataagri.com/agriculture/gis.action" target="_blank" rel="noopener">http://www.dataagri.com/agriculture/gis.action</a><br>房价指数：<a href="http://industry.fang.com/" target="_blank" rel="noopener">http://industry.fang.com/</a><br>中国统计局：<a href="http://data.stats.gov.cn/" target="_blank" rel="noopener">http://data.stats.gov.cn/</a><br>CEIC：<a href="http://www.ceicdata.com/zh-hans" target="_blank" rel="noopener">http://www.ceicdata.com/zh-hans</a><br>wind（万得）：<a href="http://www.wind.com.cn/" target="_blank" rel="noopener">http://www.wind.com.cn/</a><br>中国主要城市拥堵排名：<a href="http://report.amap.com/traffic/" target="_blank" rel="noopener">http://report.amap.com/traffic/</a><br>中国综合社会调查：<a href="http://www.chinagss.org/" target="_blank" rel="noopener">http://www.chinagss.org/</a><br>中国P2P网贷指数：<a href="http://www.p2p001.com/wdzs/wdzs_p2pline.html" target="_blank" rel="noopener">http://www.p2p001.com/wdzs/wdzs_p2pline.html</a><br>易车汽车指数：<a href="http://index.bitauto.com/" target="_blank" rel="noopener">http://index.bitauto.com/</a><br>旅游预测：<a href="http://trends.baidu.com/tour/" target="_blank" rel="noopener">http://trends.baidu.com/tour/</a></p>
+<h3 id="思维导图制作软件-网站"><a href="#思维导图制作软件-网站" class="headerlink" title="思维导图制作软件/网站"></a>思维导图制作软件/网站</h3><p>XMind思维导图软件：<a href="http://www.xmindchina.net/（软件）" target="_blank" rel="noopener">http://www.xmindchina.net/（软件）</a><br>Mindjet思维导图软件：<a href="http://www.mindmanager.cc/（软件）" target="_blank" rel="noopener">http://www.mindmanager.cc/（软件）</a><br>FreeMind思维导图：<a href="http://freemind.en.softonic.com/（软件）" target="_blank" rel="noopener">http://freemind.en.softonic.com/（软件）</a><br>iMindMap思维导图软件：<a href="http://www.imindmap.cc/（软件）" target="_blank" rel="noopener">http://www.imindmap.cc/（软件）</a><br>百度脑图：<a href="http://naotu.baidu.com/（在线）" target="_blank" rel="noopener">http://naotu.baidu.com/（在线）</a><br>MINDPINTEAM：<a href="http://mindmap.4ye.me/（在线）" target="_blank" rel="noopener">http://mindmap.4ye.me/（在线）</a><br>Mindomo：<a href="https://www.mindomo.com/zh/（在线需注册）" target="_blank" rel="noopener">https://www.mindomo.com/zh/（在线需注册）</a><br>ProcessOn：<a href="https://www.processon.com/（需注册）" target="_blank" rel="noopener">https://www.processon.com/（需注册）</a></p>
+<h3 id="PPT模板工具"><a href="#PPT模板工具" class="headerlink" title="PPT模板工具"></a>PPT模板工具</h3><p>无忧PPT：<a href="http://www.51ppt.com.cn/" target="_blank" rel="noopener">http://www.51ppt.com.cn/</a><br>瑞普PPT论坛：<a href="http://www.rapidbbs.cn/" target="_blank" rel="noopener">http://www.rapidbbs.cn/</a><br>pptstore：<a href="http://www.pptstore.net/" target="_blank" rel="noopener">http://www.pptstore.net/</a><br>51PPT模板：<a href="http://www.51pptmoban.com/ppt/" target="_blank" rel="noopener">http://www.51pptmoban.com/ppt/</a><br>第1PPT：<a href="http://www.1ppt.com/" target="_blank" rel="noopener">http://www.1ppt.com/</a><br>站长之家：<a href="http://sc.chinaz.com/ppt/" target="_blank" rel="noopener">http://sc.chinaz.com/ppt/</a><br>设计师网址导航：<a href="http://www.userinterface.com.cn/" target="_blank" rel="noopener">http://www.userinterface.com.cn/</a></p>
+<h4 id="好博客"><a href="#好博客" class="headerlink" title="好博客"></a>好博客</h4>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/10/Linux性能参数指标及排查方法-cpu跑满/" rel="next" title="Linux性能参数指标及排查方法-cpu跑满">
+                <i class="fa fa-chevron-left"></i> Linux性能参数指标及排查方法-cpu跑满
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/tanjie.jpg"
+                alt="Jachy Tan" />
+            
+              <p class="site-author-name" itemprop="name">Jachy Tan</p>
+              <p class="site-description motion-element" itemprop="description">知一行一,必获大益</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#工欲善其事，必先利其器。"><span class="nav-number">1.</span> <span class="nav-text">工欲善其事，必先利其器。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据可视化工具"><span class="nav-number">1.1.</span> <span class="nav-text">数据可视化工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#词云可视化工具"><span class="nav-number">1.2.</span> <span class="nav-text">词云可视化工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互联网趋势分析工具"><span class="nav-number">1.3.</span> <span class="nav-text">互联网趋势分析工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在线调查工具"><span class="nav-number">1.4.</span> <span class="nav-text">在线调查工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站分析监测工具"><span class="nav-number">1.5.</span> <span class="nav-text">网站分析监测工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络数据采集工具"><span class="nav-number">1.6.</span> <span class="nav-text">网络数据采集工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他数据网"><span class="nav-number">1.7.</span> <span class="nav-text">其他数据网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思维导图制作软件-网站"><span class="nav-number">1.8.</span> <span class="nav-text">思维导图制作软件/网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PPT模板工具"><span class="nav-number">1.9.</span> <span class="nav-text">PPT模板工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#好博客"><span class="nav-number">1.9.1.</span> <span class="nav-text">好博客</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jachy Tan</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
